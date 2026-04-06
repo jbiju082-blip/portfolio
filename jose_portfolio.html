@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jose Biju - Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: #2c3e50;
+      padding: 14px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    nav .logo { color: #fff; font-size: 1.2rem; font-weight: bold; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav ul a { color: #ccc; text-decoration: none; font-size: 0.95rem; }
+    nav ul a:hover { color: #fff; }
+
+    #home {
+      text-align: center;
+      background: #2c3e50;
+      color: #fff;
+      padding: 60px 30px;
+    }
+    #home h1 { font-size: 2.2rem; margin-bottom: 10px; }
+    #home p  { font-size: 1.05rem; color: #bdc3c7; max-width: 580px; margin: 0 auto 20px; }
+    #home a.btn {
+      display: inline-block;
+      background: #fff;
+      color: #2c3e50;
+      padding: 10px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.92rem;
+    }
+    #home a.btn:hover { background: #ecf0f1; }
+
+    section.card {
+      max-width: 860px;
+      margin: 35px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 35px 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      color: #2c3e50;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 6px;
+    }
+
+    p { margin-bottom: 10px; }
+
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .skill-tag {
+      background: #eaf0fb;
+      color: #2c3e50;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      border: 1px solid #c5d3e8;
+    }
+
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .project-card:last-child { margin-bottom: 0; }
+    .project-card h3 { font-size: 1.08rem; color: #2c3e50; margin-bottom: 6px; }
+    .project-card p { color: #555; font-size: 0.95rem; margin: 0; }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+      font-size: 0.97rem;
+    }
+    .contact-item:last-child { margin-bottom: 0; }
+    .contact-item .label { font-weight: bold; width: 85px; color: #2c3e50; flex-shrink: 0; }
+    .contact-item a { color: #2980b9; text-decoration: none; }
+    .contact-item a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 18px;
+      color: #888;
+      font-size: 0.85rem;
+      background: #ecf0f1;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      section.card { padding: 25px 18px; margin: 20px 12px; }
+      #home { padding: 40px 20px; }
+      #home h1 { font-size: 1.7rem; }
+      nav ul { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Jose Biju</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Hi, I'm Jose Biju</h1>
+    <p>B.Tech ADS Student &nbsp;|&nbsp; Python Developer &nbsp;|&nbsp; Prompt Engineer &amp; AI Tools Expert</p>
+    <a href="#contact" class="btn">Get In Touch</a>
+  </section>
+
+  <section class="card" id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Jose. I'm currently pursuing my B.Tech in
+      <strong>Artificial Intelligence and Data Science (ADS)</strong> at
+      <strong>Vimal Jyothi College of Engineering</strong>.
+      I specialize in <strong>AI integrated chipsets</strong> and
+      <strong>AI integrated machineries</strong>, with a strong interest in how
+      artificial intelligence is embedded into hardware and real-world systems.
+    </p>
+    <p>
+      I'm really passionate about building functional tools, like a recent gamified
+      productivity app I launched called <strong>Do-Gamify</strong>.
+    </p>
+  </section>
+
+  <section class="card" id="skills">
+    <h2>Skills &amp; Expertise</h2>
+    <div class="skills-list">
+      <span class="skill-tag">AI Integrated Chipsets</span>
+      <span class="skill-tag">AI Integrated Machineries</span>
+      <span class="skill-tag">Artificial Intelligence</span>
+      <span class="skill-tag">Data Science</span>
+      <span class="skill-tag">Machine Learning</span>
+      <span class="skill-tag">Embedded AI Systems</span>
+    </div>
+  </section>
+
+  <section class="card" id="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>Do-Gamify</h3>
+      <p>
+        A gamified productivity app that turns your to-do list into a game.
+        Users earn XP and level up by completing real tasks, making
+        productivity genuinely fun. Designed and launched independently.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        This portfolio page, built with plain HTML and CSS. Clean, responsive
+        layout that works well on both desktop and mobile.
+      </p>
+    </div>
+  </section>
+
+  <section class="card" id="contact">
+    <h2>Contact</h2>
+    <div class="contact-item">
+      <span class="label">Mobile</span>
+      <a href="tel:+919947563986">+91 99475 63986</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">Email</span>
+      <a href="mailto:jbiju082@gmail.com">Click to Email</a>
+    </div>
+    <div class="contact-item">
+      <span class="label">LinkedIn</span>
+      <a href="https://www.linkedin.com/in/jose-biju-349588317?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+         target="_blank" rel="noopener noreferrer">
+        Click to Visit LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>2025 Jose Biju. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
